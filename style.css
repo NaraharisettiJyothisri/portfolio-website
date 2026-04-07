@@ -1,0 +1,333 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: linear-gradient(90deg,#0f172a,#1e293b);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e2e8f0;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+/* ================= HOME ================= */
+
+.home {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(to right,#f8fafc,#eef2ff);
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.home-text h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.home-text span {
+    background: linear-gradient(45deg,#2563eb,#06b6d4);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.home-text h3 {
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+.home-text p {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.home-image img {
+    width: 260px;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    padding: 12px 24px;
+    background: linear-gradient(45deg,#2563eb,#06b6d4);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37,99,235,0.3);
+}
+
+.resume {
+    background: #0f172a;
+}
+
+.resume:hover {
+    background: #1e293b;
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 60px 0 30px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(45deg,#2563eb,#06b6d4);
+    display: block;
+    margin: 10px auto;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 60px 100px;
+    text-align: center;
+    color: #475569;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills {
+    padding: 60px;
+    background: #ffffff;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.skill {
+    padding: 30px;
+    width: 140px;
+    text-align: center;
+    background: #f8fafc;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.skill:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(45deg,#2563eb,#06b6d4);
+    color: white;
+}
+
+.skill i {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.skill:hover i {
+    color: white;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.projects {
+    padding: 60px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project-card {
+    padding: 30px;
+    width: 270px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    padding: 60px;
+    background: linear-gradient(to right,#eef2ff,#f8fafc);
+    text-align: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 60%;
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: #cbd5e1;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+.home-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-links {
+    display: none;
+}
+
+.contact input,
+.contact textarea {
+    width: 90%;
+}
+
+}
+/* Dark Mode */
+
+body.dark {
+background: #020617;
+color: #e2e8f0;
+transition: 0.3s;
+}
+
+body.dark .navbar {
+background: linear-gradient(90deg,#020617,#020617);
+}
+
+body.dark .home {
+background: linear-gradient(to right,#020617,#020617);
+}
+
+body.dark .skills {
+background: #020617;
+}
+
+body.dark .contact {
+background: #020617;
+}
+
+body.dark .project-card {
+background: #1e293b;
+color: white;
+}
+
+body.dark .skill {
+background: #1e293b;
+color: white;
+}
+
+body.dark .section-title {
+color: white;
+}
+
+body.dark footer {
+background: #020617;
+}
+
