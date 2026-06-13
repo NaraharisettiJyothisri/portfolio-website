@@ -330,4 +330,20 @@ color: white;
 body.dark footer {
 background: #020617;
 }
+.social-links{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
 
+.social-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+.social-links a:hover{
+    color:#00bfff;
+}
